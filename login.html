@@ -21,7 +21,7 @@
 
             if (email === storedEmail && password === storedPassword) {
                 alert("Login successful!");
-                window.location.href = "homepage.html"; // التوجيه إلى الصفحة الرئيسية
+                window.location.href = "index.html"; // التوجيه إلى الصفحة الرئيسية
             } else {
                 alert("Incorrect email or password. Please try again.");
             }
@@ -30,19 +30,21 @@
 </head>
 <body>
 
-<h2>Login</h2>
+<center> <!-- لجعل المحتوى في الوسط -->
+    <h2>Login</h2>
 
-<form onsubmit="login(event)">
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" required><br>
+    <form onsubmit="login(event)">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
 
-    <label for="password">Password</label><br>
-    <input type="password" id="password" name="password" minlength="6" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" minlength="6" required><br>
 
-    <button type="submit">Login</button>
-</form>
+        <button type="submit">Login</button>
+    </form>
 
-<p>Don't have an account? <a href="register.html">Register here</a></p> <!-- رابط التسجيل -->
+    <p>Don't have an account? <a href="register.html">Register here</a></p> <!-- رابط التسجيل -->
+</center>
 
 </body>
 </html>
