@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .selection-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .selection-button {
+            width: 50%;
+            padding: 20px;
+            font-size: 24px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .selection-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
     <script>
         window.onload = function() {
             if (localStorage.getItem("email")) {
