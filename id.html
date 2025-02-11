@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر MTA</title>
+    <title>شراء ID</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +17,24 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .nav-button {
+            padding: 15px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .nav-button:hover {
+            background-color: #2980b9;
         }
         .products {
             display: flex;
@@ -56,8 +74,13 @@
     </style>
 </head>
 <body>
-    <h1>منتجات المتجر المتوفرة</h1>
+    <h1>اختر الـ ID المناسب لك</h1>
     <div class="container">
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button">الصفحة الرئيسية</a>
+            <a href="cars.html" class="nav-button">شراء سيارة</a>
+            <a href="weapons.html" class="nav-button">شراء سلاح</a>
+        </div>
         <div class="products">
             <div class="product">
                 <img src="https://m.media-amazon.com/images/I/51lxFHNXauL.jpg" alt="Special ID 101">
